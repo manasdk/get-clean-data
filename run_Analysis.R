@@ -21,7 +21,6 @@ data_activity_labels <- read.csv("UCI HAR Dataset/activity_labels.txt", sep="", 
 # data features
 data_features <- read.csv("UCI HAR Dataset/features.txt", sep="", header=FALSE)
 data_features[,2] <- gsub('-mean', 'Mean', data_features[,2])
-data_features[,2] <- gsub('-mean', 'Mean', data_features[,2])
 data_features[,2] <- gsub('-std', 'Std', data_features[,2])
 data_features[,2] <- gsub('[-()]', '', data_features[,2])
 
